@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  height: 85px;
+  position: relative;
+}
+
+.navbar__left {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 10px;
+}
+
+.navbar__logo {
+  height: 70px;
+  margin-right: 10px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.navbar__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+}
+
+.navbar__item {
+  margin-right: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navbar__item:hover {
+  color: #000000;
+}
+
+.navbar__item::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 1;
+  right: 1;
+  width: 0;
+  height: 2px;
+  background-color: #fedb00;
+  border-radius: 5px;
+  transition: width 0.45s ease;
+}
+
+.navbar__item:hover::before {
+  width: 100%;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 10px;
+  list-style: none;
+  margin-left: auto; /* Change this to move the items to the right */
+  margin-right: -12px;
+}
+
+.navbar__item:first-child {
+  margin-left: 7px;
+}
+
+.navbar__line--vertical {
+  background-color: #fedb00;
+  width: 3px;
+  height: 150px;
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+}
+
+.navbar__line--horizontal {
+  background-color: #fedb00;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.right .navbar__item i {
+  margin-left: 5px;
+}
+
+.navbar__item.navbar__search {
+  margin-right: 1.2rem;
+  list-style: none;
+}
+
+.navbar__item.navbar__profile {
+  margin-right: 1rem;
+  list-style: none;
+}
